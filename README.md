@@ -5,9 +5,9 @@ To use the app just download all files and put your Destiny API Key in the serve
 
 App architecture:  
 1.- ui.R: user interface script.  
-2.- server.R: server script where all calculations and requests are executed. This script uses all functions described below to get all the user info and to produce the outputs. 
+2.- server.R: server script where all calculations and requests are executed. This script uses all functions described below to get all the user info and to produce the outputs.  
 3.- data folder: contains the Destiny manifest in a list object (like a dictionary).  
-4.- www folder: contains the CSS files and some PNG files for the user interface.
+4.- www folder: contains the CSS files and some PNG files for the user interface.  
 
 Functions:  
 1.- get.user (get_user.R): retrieves the membership ID and display name of the specified user.  
