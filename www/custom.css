@@ -1,0 +1,482 @@
+
+body {
+	background-image: url("app_background.png");
+	background-size: 1124px 750px;
+	background-attachment: fixed;
+}
+
+/*User tag*/
+
+#tagcontainer {height:96px; width:474px; position:relative;}
+#emblem_bkgrd {position:absolute; left:0; top:0;}
+#userName {z-index:100; position:absolute; color:white; font-size:20px; font-weight:normal; left:110px; top:25px;}
+#c_class {z-index:100; position:absolute; color:white; font-size:15px; font-weight:normal; left:110px; top:50px;}
+#grimoire {z-index:100; position:absolute; color:white; font-size:15px; font-weight:normal; left:430px; top:60px;}
+#grimoirepng {position:absolute; left:415px; top:63px;}
+#emblemlogo {position:absolute; left:0px; top:0px;}
+#lightstar {position:absolute; left:415px; top:42px;}
+#light {z-index:100; position:absolute; color:yellow; font-size:20px; font-weight:bold; left:430px; top:35px;}
+#c_level {z-index:100; position:absolute; color:white; font-size:20px; font-weight:bold; left:438px; top:10px;}
+
+/* Talent nodes grid*/
+
+#talentgridcontainer {
+	position:relative;
+	left: 40px;
+	border: 1px solid #DCD3D3;
+	border-radius: 6px;
+	display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+	padding: 6px 20px 6px 20px;
+}
+
+#talentcontainer {
+	height:136px;
+	width:271px;
+	position:relative;
+	margin: auto;
+
+}
+
+.node11 {position: absolute; left: 0px; top: 0px; height: 31px; width: 31px;}
+.node21 {position: absolute; left: 0px; top: 34px; height: 31px; width: 31px;}
+.node31 {position: absolute; left: 0px; top: 68px; height: 31px; width: 31px;}
+.node12 {position: absolute; left: 34px; top: 0px; height: 31px; width: 31px;}
+.node22 {position: absolute; left: 34px; top: 34px; height: 31px; width: 31px;}
+.node32 {position: absolute; left: 34px; top: 68px; height: 31px; width: 31px;}
+.node42 {position: absolute; left: 34px; top: 102px; height: 31px; width: 31px;}
+.node13 {position: absolute; left: 68px; top: 0px; height: 31px; width: 31px;}
+.node23 {position: absolute; left: 68px; top: 34px; height: 31px; width: 31px;}
+.node33 {position: absolute; left: 68px; top: 68px; height: 31px; width: 31px;}
+.node43 {position: absolute; left: 68px; top: 102px; height: 31px; width: 31px;}
+.node14 {position: absolute; left: 102px; top: 0px; height: 31px; width: 31px;}
+.node24 {position: absolute; left: 102px; top: 34px; height: 31px; width: 31px;}
+.node34 {position: absolute; left: 102px; top: 68px; height: 31px; width: 31px;}
+.node44 {position: absolute; left: 102px; top: 102px; height: 31px; width: 31px;}
+.node15 {position: absolute; left: 136px; top: 0px; height: 31px; width: 31px;}
+.node25 {position: absolute; left: 136px; top: 34px; height: 31px; width: 31px;}
+.node35 {position: absolute; left: 136px; top: 68px; height: 31px; width: 31px;}
+.node16 {position: absolute; left: 170px; top: 0px; height: 31px; width: 31px;}
+.node26 {position: absolute; left: 170px; top: 34px; height: 31px; width: 31px;}
+.node36 {position: absolute; left: 170px; top: 68px; height: 31px; width: 31px;}
+.node17 {position: absolute; left: 204px; top: 0px; height: 31px; width: 31px;}
+.node27 {position: absolute; left: 204px; top: 34px; height: 31px; width: 31px;}
+.node37 {position: absolute; left: 204px; top: 68px; height: 31px; width: 31px;}
+.node18 {position: absolute; left: 238px; top: 0px; height: 31px; width: 31px;}
+.node28 {position: absolute; left: 238px; top: 34px; height: 31px; width: 31px;}
+.node38 {position: absolute; left: 238px; top: 68px; height: 31px; width: 31px;}
+
+#circle {position:absolute; left:0; top:0;}
+#node {z-index:100; position:absolute; left:3px; top:3px;}
+
+.node11:hover .namebox {visibility: visible;}
+.node11:hover .descbox {visibility: visible;}
+.node21:hover .namebox {visibility: visible;}
+.node21:hover .descbox {visibility: visible;}
+.node31:hover .namebox {visibility: visible;}
+.node31:hover .descbox {visibility: visible;}
+.node12:hover .namebox {visibility: visible;}
+.node12:hover .descbox {visibility: visible;}
+.node22:hover .namebox {visibility: visible;}
+.node22:hover .descbox {visibility: visible;}
+.node32:hover .namebox {visibility: visible;}
+.node32:hover .descbox {visibility: visible;}
+.node42:hover .namebox {visibility: visible;}
+.node42:hover .descbox {visibility: visible;}
+.node13:hover .namebox {visibility: visible;}
+.node13:hover .descbox {visibility: visible;}
+.node23:hover .namebox {visibility: visible;}
+.node23:hover .descbox {visibility: visible;}
+.node33:hover .namebox {visibility: visible;}
+.node33:hover .descbox {visibility: visible;}
+.node43:hover .namebox {visibility: visible;}
+.node43:hover .descbox {visibility: visible;}
+.node14:hover .namebox {visibility: visible;}
+.node14:hover .descbox {visibility: visible;}
+.node24:hover .namebox {visibility: visible;}
+.node24:hover .descbox {visibility: visible;}
+.node34:hover .namebox {visibility: visible;}
+.node34:hover .descbox {visibility: visible;}
+.node44:hover .namebox {visibility: visible;}
+.node44:hover .descbox {visibility: visible;}
+.node15:hover .namebox {visibility: visible;}
+.node15:hover .descbox {visibility: visible;}
+.node25:hover .namebox {visibility: visible;}
+.node25:hover .descbox {visibility: visible;}
+.node35:hover .namebox {visibility: visible;}
+.node35:hover .descbox {visibility: visible;}
+.node16:hover .namebox {visibility: visible;}
+.node16:hover .descbox {visibility: visible;}
+.node26:hover .namebox {visibility: visible;}
+.node26:hover .descbox {visibility: visible;}
+.node36:hover .namebox {visibility: visible;}
+.node36:hover .descbox {visibility: visible;}
+.node17:hover .namebox {visibility: visible;}
+.node17:hover .descbox {visibility: visible;}
+.node27:hover .namebox {visibility: visible;}
+.node27:hover .descbox {visibility: visible;}
+.node37:hover .namebox {visibility: visible;}
+.node37:hover .descbox {visibility: visible;}
+.node18:hover .namebox {visibility: visible;}
+.node18:hover .descbox {visibility: visible;}
+.node28:hover .namebox {visibility: visible;}
+.node28:hover .descbox {visibility: visible;}
+.node38:hover .namebox {visibility: visible;}
+.node38:hover .descbox {visibility: visible;}
+
+/*Intellect, Discipline, and Strength meters*/
+
+.primarystatbigcontainer {
+	border: 1px solid #DCD3D3;
+	padding: 6px 0px 6px 12px;
+	border-radius: 6px;
+	width:180px;
+}
+
+.primarystatlogo {
+  position:relative
+  border: 1px solid #C3C2C2;
+  background-color: #C3C2C2;
+  width:40px;
+  height:40px;
+	margin-right: 6px;
+  border-radius: 6px;
+  display: inline-block;
+  float: left;
+}
+
+.titlemetercontainer {
+  display: inline-block;
+}
+
+.primarystatcontainer {
+  position: relative;
+}
+
+.meterq {
+	height: 10px;  /* Can be anything */
+  width: 20px;
+	position: relative;
+	background: #A9A9A9;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 1px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+  float: left;
+}
+.meterq > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(50,205,50);
+  background-image: linear-gradient(
+    center bottom,
+    rgb(43,194,83) 37%,
+    rgb(84,240,84) 69%
+  );
+  box-shadow:
+    inset 0 2px 9px  rgba(255,255,255,0.3),
+    inset 0 -2px 6px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+}
+#clear
+{
+    clear : both;
+}
+
+.primarystatnamebox {
+  visibility: hidden;
+  background-color: #B5B4B4;
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+  border: 1px solid grey;
+  text-align: left;
+  padding: 5px 10px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  position: absolute;
+  z-index: 103;
+  width: 250px;
+  bottom: 100%;
+  left: 0%;
+  margin-left: -1px;
+}
+
+.primarystatdescbox {
+  visibility: hidden;
+  background-color: #F2F1F1;
+  color: black;
+  border: 1px solid grey;
+  text-align: left;
+  font-size: 10px;
+  padding: 5px 10px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  position: absolute;
+  z-index: 101;
+  width: 250px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -125px;
+}
+
+
+.primarystatcontainer:hover .primarystatnamebox {
+  visibility: visible;
+}
+
+.primarystatcontainer:hover .primarystatdescbox {
+  visibility: visible;
+}
+
+/*Agility, Armor, and Recovery meters*/
+
+.statscontainer{
+	position: relative;
+	border: 1px solid #DCD3D3;
+	border-radius: 6px;
+	padding: 0px 20px 13px 20px;
+}
+
+.statcontainer{
+	position: relative;
+}
+
+.meter {
+	height: 10px;  /* Can be anything */
+	position: relative;
+	background: #A9A9A9;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 0px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(50,205,50);
+  background-image: linear-gradient(
+    center bottom,
+    rgb(43,194,83) 37%,
+    rgb(84,240,84) 69%
+  );
+  box-shadow:
+    inset 0 2px 9px  rgba(255,255,255,0.3),
+    inset 0 -2px 6px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.statnamebox {
+  visibility: hidden;
+  background-color: #B5B4B4;
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+  border: 1px solid grey;
+  text-align: left;
+  padding: 5px 10px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  position: absolute;
+  z-index: 103;
+  width: 250px;
+  bottom: 100%;
+  left: 0%;
+  margin-left: -1px;
+}
+
+.statdescbox {
+  visibility: hidden;
+  background-color: #F2F1F1;
+  color: black;
+  border: 1px solid grey;
+  text-align: left;
+  font-size: 10px;
+  padding: 5px 10px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  position: absolute;
+  z-index: 101;
+  width: 250px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -125px;
+}
+
+.statcontainer:hover .statnamebox {visibility: visible;}
+.statcontainer:hover .statdescbox {visibility: visible;}
+
+/*Weapon Stats meter*/
+
+#weaponcontainer {
+	position: relative;
+	margin-left: 0px;
+	margin-right: 0px;
+	border: 1px solid #DCD3D3;
+	border-radius: 6px;
+	width: 295px;
+	height: 100px;
+}
+
+#iconsweapon {
+	width: 118px;
+	height: 70px;
+	position: absolute;
+	top: 6px;
+	left: 6px;
+}
+
+#statmeters{
+  position: absolute;
+  height: 70px;
+  width: 160px;
+  left: 127px;
+  top: 6px;
+}
+
+.weaponstat {
+	font-size:10px;
+	height:10px;
+	width:60px;
+	text-align: right;
+	float: left;
+	margin: 1px 0px 1px 0px;
+}
+
+.meterw {
+	height: 10px;  /* Can be anything */
+	width: 90px;
+	margin: 1px 0px 1px 0px;
+	position: relative;
+	background: #A9A9A9;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 0px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+	float: left;
+}
+.meterw > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(50,205,50);
+  background-image: linear-gradient(
+    center bottom,
+    rgb(43,194,83) 37%,
+    rgb(84,240,84) 69%
+  );
+  box-shadow:
+    inset 0 2px 9px  rgba(255,255,255,0.3),
+    inset 0 -2px 6px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+#clear2
+{
+    clear : both;
+		margin: 1px;
+}
+
+.weaponstatcontainer:hover .namebox {visibility: visible;}
+.weaponstatcontainer:hover .descbox {visibility: visible;}
+
+/*Item icons*/
+
+#icons {
+	position:relative;
+	height:70px;
+	width:118px;
+}
+
+#lightbox {
+	position: absolute;
+	width: 30px;
+	height: 17px;
+	bottom: 0px;
+	left: 0px;
+	background-color: rgba(4,4,4,0.6);
+	text-align: center;
+	vertical-align: middle;
+  line-height: 17px;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+}
+
+.perk1 {position: absolute; left: 73px; top: 0px; height: 21px; width: 21px;}
+.perk2 {position: absolute; left: 73px; top: 24px; height: 21px; width: 21px;}
+.perk3 {position: absolute; left: 73px; top: 48px; height: 21px; width: 21px;}
+.perk4 {position: absolute; left: 97px; top: 0px; height: 21px; width: 21px;}
+.perk5 {position: absolute; left: 97px; top: 24px; height: 21px; width: 21px;}
+.perk6 {position: absolute; left: 97px; top: 48px; height: 21px; width: 21px;}
+
+#perklogo {position: absolute; left: 3px; top:3px; z-index: 100;}
+#circle {position: absolute; left: 0px; top:0px;}
+
+.namebox {
+  visibility: hidden;
+  background-color: #B5B4B4;
+  color: black;
+  font-size: 10px;
+	font-weight: bold;
+  border: 1px solid grey;
+  text-align: left;
+  padding: 5px 10px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  position: absolute;
+  z-index: 103;
+  width: 250px;
+  bottom: 100%;
+  left: 0px;
+  margin-left: -1px;
+}
+
+.descbox {
+  visibility: hidden;
+  background-color: #F2F1F1;
+  color: black;
+  border: 1px solid grey;
+  text-align: left;
+	font-size: 10px;
+  padding: 5px 10px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  position: absolute;
+  z-index: 101;
+  width: 250px;
+  bottom: 110%;
+  left: 0px;
+  margin-left: -125px;
+}
+
+.perk1:hover .namebox {visibility: visible;}
+.perk1:hover .descbox {visibility: visible;}
+.perk2:hover .namebox {visibility: visible;}
+.perk2:hover .descbox {visibility: visible;}
+.perk3:hover .namebox {visibility: visible;}
+.perk3:hover .descbox {visibility: visible;}
+.perk4:hover .namebox {visibility: visible;}
+.perk4:hover .descbox {visibility: visible;}
+.perk5:hover .namebox {visibility: visible;}
+.perk5:hover .descbox {visibility: visible;}
+.perk6:hover .namebox {visibility: visible;}
+.perk6:hover .descbox {visibility: visible;}
