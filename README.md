@@ -1,4 +1,4 @@
-# DestinyApp
+# DestinyApp (WIP)
 Destiny app developed in R Shiny to get a specified user's inventory and stats. 
 
 To use the app just download all files and put your Destiny API Key in the server.R file (in line 17).
@@ -20,5 +20,6 @@ Functions:
 8.- item.output (item_output): generates the html for each of the items in the inventory.  
 9.- intel.disc.stre.meter (intel_disc_stre_meter.R): generates necessary objects for the character's statistics output.  
 
-
+Workin on:
+- Player stats for each game type.
 
