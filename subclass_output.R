@@ -25,9 +25,9 @@ subclass.output <- function(GETTALENTGRID, GETCHARACTERS, CHARACTERID, GETITEMIN
   disciplineValue <- as.integer(GETCHARACTERS$stats$discipline$value[character_index])
   strengthValue <- as.integer(GETCHARACTERS$stats$strength$value[character_index])
   
-  url_intellectLogo <- "http://www.bungie.net/common/destiny_content/icons/b5860f840defcf2243aba88a4b125e66.png"
-  url_disciplineLogo <- "http://www.bungie.net/common/destiny_content/icons/0bae27ec7fa564a5928e23af11e27b83.png"
-  url_strengthLogo <- "http://www.bungie.net/common/destiny_content/icons/0cb8cf4c73f21d1f4c3ab7b3af9193c4.png"
+  url_intellectLogo <- paste0("http://www.bungie.net",ALLDATA$DestinyStatDefinition$`144602215`$icon)
+  url_disciplineLogo <- paste0("http://www.bungie.net",ALLDATA$DestinyStatDefinition$`1735777505`$icon)
+  url_strengthLogo <- paste0("http://www.bungie.net",ALLDATA$DestinyStatDefinition$`4244567218`$icon)
   
   i.d.s.Meter <- intel.disc.stre.meter(INTELLECT = intellectValue, DISCIPLINE = disciplineValue, STRENGTH = strengthValue, GETITEMINSTANCE = GETITEMINSTANCE)
   
